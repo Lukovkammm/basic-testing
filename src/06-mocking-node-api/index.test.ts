@@ -70,7 +70,7 @@ jest.mock('fs/promises');
 describe('readFileAsynchronously', () => {
   const pathToFile = 'path/to/file';
 
-  afterEach(() => {
+  beforeEach(() => {
     jest.clearAllMocks();
   });
 
